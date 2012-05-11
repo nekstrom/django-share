@@ -1,0 +1,2 @@
+recursive-include service_links/static *
+recursive-include service_links/templates *

@@ -1,3 +1,5 @@
-{% for link in links %}
-yo
+{% for provider in providers %}
+ {% with "service_links/"|add:provider|add:".html" as template %}
+ 	{% include template %}
+ {% endwith %}	
 {% endfor %}

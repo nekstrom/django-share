@@ -7,5 +7,9 @@ register = Library()
 
 @register.inclusion_tag('service_links/links.html', takes_context=True)
 def service_links(context, providers=None):
-  links = {'facebook_like'}
-  return {'bookmarks':links}
+  providers = {'facebook_like'}
+
+  ##for provider in providers:
+
+
+  return {'providers':providers}
