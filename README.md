@@ -34,9 +34,9 @@ Templates
 
 The default listing can found at ``share/links.html``
 
-All providers will be avaiable at ''share/providers/[provider].html''
+All providers will be avaiable at ``share/providers/[provider].html``
 
-ex: ''share/providers/facebook.html''
+ex: ``share/providers/facebook.html``
     
 Providers
 =========
