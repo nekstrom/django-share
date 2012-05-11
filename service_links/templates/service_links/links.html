@@ -1,5 +1,9 @@
+<ul class="service-links">
 {% for provider in providers %}
- {% with "service_links/"|add:provider|add:".html" as template %}
+ <li class="service-link service-link-{{provider}}">
+ {% with "service_links/providers/"|add:provider|add:".html" as template %}
  	{% include template %}
- {% endwith %}	
+ {% endwith %}
+ </li>
 {% endfor %}
+</ul>

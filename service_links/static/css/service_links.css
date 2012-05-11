@@ -1,0 +1,27 @@
+.service-links {
+  list-style: none;
+}
+
+.service-links .service-link {
+	width: 70px;
+  height:35px;
+}
+
+.service-links .service-link .button {
+  background: url("../images/providers-icon-sprite.png") no-repeat;
+  width: 35px;
+  height:20px;
+  float:left;
+}
+
+.service-links .service-link .count {
+  float:left;
+}
+
+.service-links .service-link-facebook .button {
+  background-position: 0 0;
+}  
+
+.service-links .service-link-twitter .button {
+  background-position: 0px -25px;
+}  
