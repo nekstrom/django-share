@@ -1,2 +1,2 @@
-recursive-include service_links/static *
-recursive-include service_links/templates *
+recursive-include share/static *
+recursive-include share/templates *

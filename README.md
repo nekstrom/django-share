@@ -1,7 +1,9 @@
-### Django Service Links
+### Django Share
+
+Django Share allow users to share a web page in various social networks like bookmarking services, social blogs and similiar.
 
 Template tags:
 
-    service_links_css
-
-    service_links    
+    share_css
+    share_js
+    share    
