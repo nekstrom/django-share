@@ -19,7 +19,7 @@ class ShareNode(Node):
   def __init__(self, providers=None):
     self.providers = providers
   def render(self, context):
-    return render_to_string('share/links.html', {'providers': self.providers, 'url': context['request'].META['HTTP_REFERER']})
+    return render_to_string('share/links.html', {'providers': self.providers, 'url': context['request'].build_absolute_uri()})
 
 @register.tag
 def share(parser, token):
