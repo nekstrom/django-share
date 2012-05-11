@@ -6,4 +6,18 @@ Template tags:
 
     share_css
     share_js
+    
+Needed css and js files for the sharing services    
+    
     share    
+    
+Renders a lsiting for all enabled providers
+    
+Providers
+
+    facebook
+    twitter
+ 
+Csutom provider
+   
+    email
