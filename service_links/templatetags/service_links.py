@@ -19,6 +19,7 @@ def service_links(context, providers=None):
   providers = {
   	'facebook',
   	'twitter',
+  	'email',
   	#'googleplus',
   }
   return {'providers':providers}

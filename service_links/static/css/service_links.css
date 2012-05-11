@@ -15,7 +15,19 @@
 }
 
 .service-links .service-link .count {
-  float:left;
+  font-size: 11px;
+  float: right;
+  border: 1px solid #CCC;
+  width: 32px;
+  height: 19px;
+  line-height: 19px!important;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #676A6B;
+  position: relative;
+  background-color: white;
 }
 
 .service-links .service-link-facebook .button {
