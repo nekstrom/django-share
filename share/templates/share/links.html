@@ -1,6 +1,6 @@
-<ul class="service-links">
+<ul class="share-bar">
 {% for provider in providers %}
- <li class="service-link service-link-{{provider}}">
+ <li class="share share-{{provider}}">
  {% with "share/providers/"|add:provider|add:".html" as template %}
  	{% include template %}
  {% endwith %}

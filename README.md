@@ -20,14 +20,18 @@ Load the template tags where needed
 Template tags
 ==============
 
-    {{share_css}}
-    {{share_js}}
+    {{ share_css }}
+    {{ share_js }}
     
 Needed css and js files for the sharing services    
     
-    {{share}}    
+    {{ share }}    
     
-Renders a listing for all enabled providers
+Renders a listing for all enabled providers. Its also possible to limit the list to a selection of providers.
+
+    {{ share facebook twitter }}  
+    
+Returns a list with the given providers    
 
 Templates
 =========

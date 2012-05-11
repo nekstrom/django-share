@@ -1,20 +1,20 @@
-.service-links {
+.share-bar {
   list-style: none;
 }
 
-.service-links .service-link {
+.share-bar .share {
 	width: 70px;
   height:35px;
 }
 
-.service-links .service-link .button {
+.share-bar .share .button {
   background: url("../images/providers-icon-sprite.png") no-repeat;
   width: 35px;
   height:20px;
   float:left;
 }
 
-.service-links .service-link .count {
+.share-bar .share .count {
   font-size: 11px;
   float: right;
   border: 1px solid #CCC;
@@ -30,15 +30,15 @@
   background-color: white;
 }
 
-.service-links .service-link-facebook .button {
+.share-bar .share-facebook .button {
   background-position: 0 0;
 }  
 
-.service-links .service-link-twitter .button {
+.share-bar .share-twitter .button {
   background-position: 0px -25px;
 } 
 
-.service-links .service-link-email .button {
+.share-bar .share-link-email .button {
   background-position: 0px -95px;
 }  
 

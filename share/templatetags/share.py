@@ -1,8 +1,9 @@
 import urlparse
 
-from django.template import Library
+from django.template import Library, TemplateSyntaxError, Node
 from django.utils.http import urlquote
 from django.conf import settings
+from django.template.loader import render_to_string
 
 register = Library()
 
@@ -14,12 +15,27 @@ def share_css():
 def share_js():
 	return "<script src='" + settings.STATIC_URL +"js/share.js' type='text/javascript'></script>"
 
-@register.inclusion_tag('share/links.html', takes_context=True)
-def share(context, providers=None):
-  providers = {
-  	'facebook',
-  	'twitter',
-  	'email',
-  	#'googleplus',
-  }
-  return {'providers': providers}
+class ShareNode(Node):
+  def __init__(self, providers=None):
+    self.providers = providers
+  def render(self, context):
+    return render_to_string('share/links.html', {'providers': self.providers})
+
+@register.tag
+def share(parser, token):
+  args = token.split_contents()
+
+  if len(args) == 1:
+    providers = {
+    	'facebook',
+    	'twitter',
+    	#'pinterest',
+    	'email',
+    	#'googleplus',
+    }
+
+  else:
+    args.pop(0)
+    providers = args
+
+  return ShareNode(providers)
