@@ -5,12 +5,16 @@ Django Share allow users to share a web page in various social networks like boo
 Template tags:
 ==============
 
-    share_css
-    share_js
+    {% load share %}
+
+first load the tag file
+
+    {{share_css}}
+    {{share_js}}
     
 Needed css and js files for the sharing services    
     
-    share    
+    {{share}}    
     
 Renders a lsiting for all enabled providers
     
