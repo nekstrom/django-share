@@ -1,5 +1,6 @@
 $(function() {
     url = document.location;
+    
     // Facebook
     $.getJSON('http://graph.facebook.com/'+url+'&callback=?',
         function(data) {  
@@ -14,13 +15,5 @@ $(function() {
             $('.share-twitter .button').attr("target", "_blank"); 
             $('.share-twitter .button').attr("href", "https://twitter.com/share?url=" + url); // should make it overidable
             $('.share-twitter .count').append(data.count);
-    });
-
-    // Pinterest
-    $.getJSON('http://pinterest.com/pin/create/button/?url=' + url,
-        function(data) {
-            $('.share-pinterest .button').attr("target", "_blank"); 
-            $('.share-pinterest .button').attr("href", "https://twitter.com/share?url=" + url); // should make it overidable
-            $('.share-pinterest .count').append(data.count);
     });
 });

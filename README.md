@@ -1,6 +1,7 @@
 ### Django Share
 
 Django Share allow users to share a web page in various social networks like bookmarking services, social blogs and similiar.
+Most providers included are no using widgets but are based on theyre api's. Meaning you can customise the look and feel of every provider.
 
 Installation
 ==============
@@ -47,6 +48,7 @@ Providers
 
     facebook
     twitter
+    pinterest
  
 custom providers
    

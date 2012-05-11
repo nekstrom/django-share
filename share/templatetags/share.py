@@ -29,7 +29,7 @@ def share(parser, token):
     providers = {
     	'facebook',
     	'twitter',
-    	#'pinterest',
+    	'pinterest',
     	'email',
     	#'googleplus',
     }
