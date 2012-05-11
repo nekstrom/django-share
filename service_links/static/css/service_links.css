@@ -36,4 +36,9 @@
 
 .service-links .service-link-twitter .button {
   background-position: 0px -25px;
+} 
+
+.service-links .service-link-email .button {
+  background-position: 0px -95px;
 }  
+
