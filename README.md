@@ -2,12 +2,23 @@
 
 Django Share allow users to share a web page in various social networks like bookmarking services, social blogs and similiar.
 
-Template tags:
+Installation
 ==============
 
-first load the share template tags
+Add to installed_apps:
+
+    'share',
+    
+Include url patterns
+
+    (r'^share/', include('share.urls')),
+
+Load the template tags where needed
 
     {% load share %}
+
+Template tags
+==============
 
     {{share_css}}
     {{share_js}}
