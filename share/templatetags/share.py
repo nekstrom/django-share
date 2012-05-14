@@ -27,10 +27,9 @@ def share(parser, token):
 
   if len(args) == 1:
     providers = {
-    	'facebook',
-    	'twitter',
-    	'pinterest',
-    	'email',
+      'main': {'facebook', 'twitter', 'pinterest',},
+    	'more': {'email',},
+
     	#'googleplus',
     }
 
