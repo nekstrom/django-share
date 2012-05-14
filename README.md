@@ -23,12 +23,10 @@ Settings
 
 ``SHARE_PROVIDERS``
 
-Defaults:
+Defaults to:
 
-    providers = {
-      'main': {'facebook', 'twitter', 'pinterest',},
-      'more': {'email',},
-    }
+    {'main': {'facebook', 'twitter', 'pinterest',},
+    'more': {'email',},}
 
 Template tags
 ==============
@@ -49,11 +47,13 @@ Returns a list with the given providers
 Templates
 =========
 
-The default listing can found at ``share/links.html``
+The default listing/widget can found at ``share/links.html``
 
-All providers will be avaiable at ``share/providers/[provider].html``
+All providers are avaiable at ``share/providers/[provider].html``
 
 ex: ``share/providers/facebook.html``
+
+You can create a custom provider by adding it the ``SHARE_PROVIDERS`` setting and creating a template for it at: ``share/providers/[provider].html``
     
 Providers
 =========
