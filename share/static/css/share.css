@@ -44,4 +44,8 @@
 
 .share-bar .share-link-pinterest .button {
   background-position: 0px -75px;
-}    
+}
+
+.share-bar .share-link-print .button {
+  background-position: 0px -115px;
+}   

@@ -27,8 +27,8 @@ A turple containing providers.
 
 Defaults to:
 
-    {'main': {'facebook', 'twitter', 'pinterest',},
-    'more': {'email',},}
+    {'main': {'facebook', 'twitter', 'pinterest', 'googleplus',},
+    'more': {'email', 'print', },}
 
 Template tags
 ==============
@@ -63,7 +63,9 @@ Included Providers
     facebook
     twitter
     pinterest
+    googleplus
  
 custom providers
    
     email
+    print
