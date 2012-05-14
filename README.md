@@ -23,6 +23,8 @@ Settings
 
 ``SHARE_PROVIDERS``
 
+A turple containing providers.
+
 Defaults to:
 
     {'main': {'facebook', 'twitter', 'pinterest',},
@@ -55,7 +57,7 @@ ex: ``share/providers/facebook.html``
 
 You can create a custom provider by adding it the ``SHARE_PROVIDERS`` setting and creating a template for it at: ``share/providers/[provider].html``
     
-Providers
+Included Providers
 =========
 
     facebook
