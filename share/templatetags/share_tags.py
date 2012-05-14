@@ -1,8 +1,8 @@
 import urlparse
-
 from django.template import Library, TemplateSyntaxError, Node
 from django.utils.http import urlquote
 from django.conf import settings
+from share.settings import *
 from django.template.loader import render_to_string
 
 register = Library()
@@ -26,13 +26,7 @@ def share(parser, token):
   args = token.split_contents()
 
   if len(args) == 1:
-    providers = {
-      'main': {'facebook', 'twitter', 'pinterest',},
-    	'more': {'email',},
-
-    	#'googleplus',
-    }
-
+    providers = SHARE_PROVIDERS
   else:
     args.pop(0)
     providers = args
