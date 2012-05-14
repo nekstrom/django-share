@@ -8,7 +8,7 @@ Installation
 
 Add to installed_apps:
 
-    'share_tags',
+    'share',
     
 Include url patterns
 
@@ -16,12 +16,14 @@ Include url patterns
 
 Load the template tags where needed
 
-    {% load share %}
+    {% load share_tags %}
 
 Settings
 ==============
 
 ``SHARE_PROVIDERS``
+
+Defaults:
 
     providers = {
       'main': {'facebook', 'twitter', 'pinterest',},
