@@ -1,4 +1,7 @@
 
-
-<a class="share-pinterest-button button" href="http://pinterest.com/pin/create/button/?url={{url}}" target="_blank"></a>
-<div class="share-pinterest-count count">0</div>
+<div id="pinterest-placeholder"></div>
+<script type="text/javascript">
+	(function($) {
+	    $("#pinterest-placeholder").share({provider: 'pinterest'});
+	})(jQuery);
+ </script>
