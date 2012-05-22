@@ -90,4 +90,7 @@ ul.share-bar-more .triangle {
 
 .share-bar .share-link-print .button {
   background-position: 0px -115px;
-}   
+}
+.share-bar .share-link-printerest #CountBubble {
+  width:100px;
+}
