@@ -1,10 +1,22 @@
 .share-bar {
   list-style: none;
+  margin: 0;
+  padding: 8px 0 0 0;
+  position: relative;
+  overflow: hidden;
+  width: 340px;
+  height: 32px;
 }
 
 .share-bar .share {
 	width: 70px;
   height:35px;
+  float: left;
+  margin-right: 4px;
+}
+
+.share-bar a.more {
+  cursor: pointer;
 }
 
 .share-bar .share .button {
@@ -28,6 +40,36 @@
   color: #676A6B;
   position: relative;
   background-color: white;
+}
+
+ul.share-bar-more {
+  left: 350px;
+  position: absolute;
+  top: 0px;
+  list-style: none;
+  margin: 0;
+  background: #EFEFEF;
+  border: 1px solid #DDD;
+  border-bottom: 1px solid #AAA;
+  border-radius: 3px;
+  padding: 4px 0 2px 20px;
+  width: 75px;
+}
+
+ul.share-bar-more .share {
+  width: 33px;
+  height: 28px;
+}
+
+ul.share-bar-more .triangle { 
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; 
+  border-right:10px solid #EFEFEF;
+  position: absolute;
+  left: -10px;
+  top: 7px;
 }
 
 .share-bar .share-link-facebook .button {
