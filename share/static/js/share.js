@@ -22,17 +22,19 @@ $(function() {
 (function($) {
 
   // Share plugin
-  $.fn.share = function(options) {
+  $.fn.share = function(options, url, text) {
 
+    if(url == undefined) url = document.location;
+    if(text == undefined) text = "";
     var opts = $.extend({}, $.fn.share.defaults, options);
     var loaded = new Array();
-    var url = document.location;
+    
 
     return this.each(function() {
 
       // Twitter
       if(opts.provider == "twitter") {
-        $(this).replaceWith('<a class="share-twitter-button button" href="https://twitter.com/share?url='+ url +'" target="_blank"></a><div class="share-twitter-count count">0</div>');
+        $(this).replaceWith('<a class="share-twitter-button button" href="https://twitter.com/share?url='+ url +'&text='+text+'" target="_blank"></a><div class="share-twitter-count count">0</div>');
         $.getJSON('http://urls.api.twitter.com/1/urls/count.json?url='+url+'&callback=?', function(data) {  
           $('.share-link-twitter .count').text(data.count);
         });  
